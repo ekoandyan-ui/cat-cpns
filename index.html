@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Setup Firebase</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="landing">
+        <div class="inputan">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Tulis Email"
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Tulis Password"
+          />
+        </div>
+
+        <div class="tombolan">
+          <button data-button="register">Register</button>
+          <button data-button="login">Login</button>
+          <button data-button="forgot">Forgot</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FIREBASE WAJIB -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <!-- FIREBASE PILIHAN -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <script src="./scripts/firebase-config.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
